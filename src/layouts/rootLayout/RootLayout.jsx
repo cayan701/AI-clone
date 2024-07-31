@@ -5,12 +5,13 @@ import { Link, Outlet } from "react-router-dom";
 
 export const RootLayout = () => {
   return (
-    <div>
+    <div className="rootLayout">
       <header>
-        <Link to="/">
+        <Link to="/" className="logo">
           <img src="/logo.png" alt="" />
           <span>StarkGPT</span>
         </Link>
+        <div className="user">USER</div>
       </header>
       <main>
         <Outlet />
